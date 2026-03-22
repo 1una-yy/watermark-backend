@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
     # Database
-    DATABASE_URL: str = "mysql+aiomysql://root:password@localhost:3306/watermark_db"
+    DATABASE_URL: str = "mysql+aiomysql://user:password@localhost:3306/watermark_db"
 
     # JWT
     SECRET_KEY: str = "change-me-in-production"
